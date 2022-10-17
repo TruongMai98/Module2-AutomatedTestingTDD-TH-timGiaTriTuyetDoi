@@ -27,11 +27,13 @@ class AbsoluteNumberCalculatorTest {
     }
 
     @Test
+    @DisplayName("number = -1, number = 1")
+
     void finAbsolute2() {
         int number = -1;
         int expected = 1;
 
         int result = AbsoluteNumberCalculator.findAbsolute(number);
-         assertEquals(expected, number);
+         assertEquals(expected, result);
     }
 }
